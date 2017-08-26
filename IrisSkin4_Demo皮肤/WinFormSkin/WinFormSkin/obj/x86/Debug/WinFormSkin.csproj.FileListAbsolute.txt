@@ -1,0 +1,9 @@
+D:\MyCloudFiles\MyDevelop\个人项目\WinFormSkin\WinFormSkin\bin\Debug\WinFormSkin.exe
+D:\MyCloudFiles\MyDevelop\个人项目\WinFormSkin\WinFormSkin\bin\Debug\WinFormSkin.pdb
+D:\MyCloudFiles\MyDevelop\个人项目\WinFormSkin\WinFormSkin\bin\Debug\IrisSkin4.dll
+D:\MyCloudFiles\MyDevelop\个人项目\WinFormSkin\WinFormSkin\obj\x86\Debug\WinFormSkin.csprojResolveAssemblyReference.cache
+D:\MyCloudFiles\MyDevelop\个人项目\WinFormSkin\WinFormSkin\obj\x86\Debug\WinFormSkin.Form1.resources
+D:\MyCloudFiles\MyDevelop\个人项目\WinFormSkin\WinFormSkin\obj\x86\Debug\WinFormSkin.Properties.Resources.resources
+D:\MyCloudFiles\MyDevelop\个人项目\WinFormSkin\WinFormSkin\obj\x86\Debug\WinFormSkin.csproj.GenerateResource.Cache
+D:\MyCloudFiles\MyDevelop\个人项目\WinFormSkin\WinFormSkin\obj\x86\Debug\WinFormSkin.exe
+D:\MyCloudFiles\MyDevelop\个人项目\WinFormSkin\WinFormSkin\obj\x86\Debug\WinFormSkin.pdb
