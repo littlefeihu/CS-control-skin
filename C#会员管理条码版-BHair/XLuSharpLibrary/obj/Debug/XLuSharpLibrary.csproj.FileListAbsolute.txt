@@ -1,0 +1,5 @@
+E:\GitHub\CS-control-skin\C#会员管理条码版-BHair\XLuSharpLibrary\bin\Debug\XLuSharpLibrary.dll
+E:\GitHub\CS-control-skin\C#会员管理条码版-BHair\XLuSharpLibrary\bin\Debug\XLuSharpLibrary.pdb
+E:\GitHub\CS-control-skin\C#会员管理条码版-BHair\XLuSharpLibrary\obj\Debug\XLuSharpLibrary.csprojResolveAssemblyReference.cache
+E:\GitHub\CS-control-skin\C#会员管理条码版-BHair\XLuSharpLibrary\obj\Debug\XLuSharpLibrary.dll
+E:\GitHub\CS-control-skin\C#会员管理条码版-BHair\XLuSharpLibrary\obj\Debug\XLuSharpLibrary.pdb

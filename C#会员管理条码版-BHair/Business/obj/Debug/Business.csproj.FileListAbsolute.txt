@@ -1,0 +1,43 @@
+D:\BHair2\Business\obj\Debug\ResolveAssemblyReference.cache
+D:\BHair2\Business\bin\Debug\BHair.Business.dll
+D:\BHair2\Business\bin\Debug\BHair.Business.pdb
+D:\BHair2\Business\bin\Debug\XLuSharpLibrary.dll
+D:\BHair2\Business\obj\Debug\BHair.Business.dll
+D:\BHair2\Business\obj\Debug\BHair.Business.pdb
+E:\项目\未分类\BHair2\Business\bin\Debug\BHair.Business.dll
+E:\项目\未分类\BHair2\Business\bin\Debug\BHair.Business.pdb
+E:\项目\未分类\BHair2\Business\bin\Debug\XLuSharpLibrary.dll
+E:\项目\未分类\BHair2\Business\obj\Debug\ResolveAssemblyReference.cache
+E:\项目\未分类\BHair2\Business\obj\Debug\BHair.Business.dll
+E:\项目\未分类\BHair2\Business\obj\Debug\BHair.Business.pdb
+D:\test\SalonSystem\Business\bin\Debug\BHair.Business.dll
+D:\test\SalonSystem\Business\bin\Debug\BHair.Business.pdb
+D:\test\SalonSystem\Business\bin\Debug\XLuSharpLibrary.dll
+D:\test\SalonSystem\Business\obj\Debug\ResolveAssemblyReference.cache
+D:\test\SalonSystem\Business\obj\Debug\BHair.Business.dll
+D:\test\SalonSystem\Business\obj\Debug\BHair.Business.pdb
+F:\tao\hygl\Business\bin\Debug\BHair.Business.dll
+F:\tao\hygl\Business\bin\Debug\BHair.Business.pdb
+F:\tao\hygl\Business\bin\Debug\XLuSharpLibrary.dll
+F:\tao\hygl\Business\obj\Debug\ResolveAssemblyReference.cache
+F:\tao\hygl\Business\obj\Debug\BHair.Business.dll
+F:\tao\hygl\Business\obj\Debug\BHair.Business.pdb
+E:\资料\源码网站\系统\会员管理\hygl\Business\bin\Debug\BHair.Business.dll
+E:\资料\源码网站\系统\会员管理\hygl\Business\bin\Debug\BHair.Business.pdb
+E:\资料\源码网站\系统\会员管理\hygl\Business\bin\Debug\XLuSharpLibrary.dll
+E:\资料\源码网站\系统\会员管理\hygl\Business\obj\Debug\ResolveAssemblyReference.cache
+E:\资料\源码网站\系统\会员管理\hygl\Business\obj\Debug\BHair.Business.dll
+E:\资料\源码网站\系统\会员管理\hygl\Business\obj\Debug\BHair.Business.pdb
+D:\用户目录\我的文档\Tencent Files\378917466\FileRecv\源代码\C#会员管理条码版-BHair\Business\bin\Debug\BHair.Business.dll
+D:\用户目录\我的文档\Tencent Files\378917466\FileRecv\源代码\C#会员管理条码版-BHair\Business\bin\Debug\BHair.Business.pdb
+D:\用户目录\我的文档\Tencent Files\378917466\FileRecv\源代码\C#会员管理条码版-BHair\Business\bin\Debug\XLuSharpLibrary.dll
+D:\用户目录\我的文档\Tencent Files\378917466\FileRecv\源代码\C#会员管理条码版-BHair\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
+D:\用户目录\我的文档\Tencent Files\378917466\FileRecv\源代码\C#会员管理条码版-BHair\Business\obj\Debug\BHair.Business.dll
+D:\用户目录\我的文档\Tencent Files\378917466\FileRecv\源代码\C#会员管理条码版-BHair\Business\obj\Debug\BHair.Business.pdb
+E:\GitHub\CS-control-skin\C#会员管理条码版-BHair\Business\bin\Debug\BHair.Business.dll
+E:\GitHub\CS-control-skin\C#会员管理条码版-BHair\Business\bin\Debug\BHair.Business.pdb
+E:\GitHub\CS-control-skin\C#会员管理条码版-BHair\Business\bin\Debug\XLuSharpLibrary.dll
+E:\GitHub\CS-control-skin\C#会员管理条码版-BHair\Business\bin\Debug\XLuSharpLibrary.pdb
+E:\GitHub\CS-control-skin\C#会员管理条码版-BHair\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
+E:\GitHub\CS-control-skin\C#会员管理条码版-BHair\Business\obj\Debug\BHair.Business.dll
+E:\GitHub\CS-control-skin\C#会员管理条码版-BHair\Business\obj\Debug\BHair.Business.pdb

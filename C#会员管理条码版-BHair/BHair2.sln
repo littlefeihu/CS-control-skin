@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BHair", "BHair\BHair.csproj", "{1D68A981-BD8D-497A-A6E1-2F8BCAB9E766}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "Business\Business.csproj", "{778265EE-4F26-4739-A390-AE5510CF9C81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XLuSharpLibrary", "XLuSharpLibrary\XLuSharpLibrary.csproj", "{A0E96A44-9813-488B-A9BB-A9A27C3405D9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1D68A981-BD8D-497A-A6E1-2F8BCAB9E766}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D68A981-BD8D-497A-A6E1-2F8BCAB9E766}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D68A981-BD8D-497A-A6E1-2F8BCAB9E766}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D68A981-BD8D-497A-A6E1-2F8BCAB9E766}.Release|Any CPU.Build.0 = Release|Any CPU
+		{778265EE-4F26-4739-A390-AE5510CF9C81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{778265EE-4F26-4739-A390-AE5510CF9C81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{778265EE-4F26-4739-A390-AE5510CF9C81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{778265EE-4F26-4739-A390-AE5510CF9C81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0E96A44-9813-488B-A9BB-A9A27C3405D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0E96A44-9813-488B-A9BB-A9A27C3405D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0E96A44-9813-488B-A9BB-A9A27C3405D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0E96A44-9813-488B-A9BB-A9A27C3405D9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
