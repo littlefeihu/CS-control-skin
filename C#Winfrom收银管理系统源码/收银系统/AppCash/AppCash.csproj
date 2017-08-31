@@ -1,0 +1,810 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D7DD3E5C-57ED-4495-BB5F-E0037DCEDB1B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AppCash</RootNamespace>
+    <AssemblyName>AppCash</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2">
+      <HintPath>..\..\..\..\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="会员管理\frmAddVip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="会员管理\frmAddVip.Designer.cs">
+      <DependentUpon>frmAddVip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="会员管理\frmVip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="会员管理\frmVip.Designer.cs">
+      <DependentUpon>frmVip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="会员管理\frmEditVip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="会员管理\frmEditVip.Designer.cs">
+      <DependentUpon>frmEditVip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="供应商管理\frmAddSup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="供应商管理\frmAddSup.designer.cs">
+      <DependentUpon>frmAddSup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="供应商管理\frmEditSup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="供应商管理\frmEditSup.designer.cs">
+      <DependentUpon>frmEditSup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="供应商管理\frmSup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="供应商管理\frmSup.Designer.cs">
+      <DependentUpon>frmSup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="员工管理\frmAddUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="员工管理\frmAddUsers.Designer.cs">
+      <DependentUpon>frmAddUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="员工管理\frmUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="员工管理\frmUsers.Designer.cs">
+      <DependentUpon>frmUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="员工管理\frmEditUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="员工管理\frmEditUsers.Designer.cs">
+      <DependentUpon>frmEditUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="商品单位\frmAddUnit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="商品单位\frmAddUnit.Designer.cs">
+      <DependentUpon>frmAddUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="商品单位\frmUnit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="商品单位\frmUnit.Designer.cs">
+      <DependentUpon>frmUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="商品单位\frmEditUnit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="商品单位\frmEditUnit.Designer.cs">
+      <DependentUpon>frmEditUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="商品查询\frmGoodsSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="商品查询\frmGoodsSearch.Designer.cs">
+      <DependentUpon>frmGoodsSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="商品档案\frmAddGppds.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="商品档案\frmAddGppds.Designer.cs">
+      <DependentUpon>frmAddGppds.cs</DependentUpon>
+    </Compile>
+    <Compile Include="商品档案\frmEditGppds.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="商品档案\frmEditGppds.Designer.cs">
+      <DependentUpon>frmEditGppds.cs</DependentUpon>
+    </Compile>
+    <Compile Include="商品档案\frmGoods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="商品档案\frmGoods.Designer.cs">
+      <DependentUpon>frmGoods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="商品盘点\frmPD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="商品盘点\frmPD.Designer.cs">
+      <DependentUpon>frmPD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="商品类别\frmAddCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="商品类别\frmAddCategory.Designer.cs">
+      <DependentUpon>frmAddCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="商品类别\frmEditCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="商品类别\frmEditCategory.Designer.cs">
+      <DependentUpon>frmEditCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="商品类别\frmCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="商品类别\frmCategory.Designer.cs">
+      <DependentUpon>frmCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="商品零售报表\frmReport1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="商品零售报表\frmReport1.Designer.cs">
+      <DependentUpon>frmReport1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="商铺信息\frmShop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="商铺信息\frmShop.Designer.cs">
+      <DependentUpon>frmShop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="开始收银\frmCash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="开始收银\frmCash.Designer.cs">
+      <DependentUpon>frmCash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="开始收银\frmCounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="开始收银\frmCounts.Designer.cs">
+      <DependentUpon>frmCounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="开始收银\frmMoney.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="开始收银\frmMoney.Designer.cs">
+      <DependentUpon>frmMoney.cs</DependentUpon>
+    </Compile>
+    <Compile Include="开始收银\frmCVip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="开始收银\frmCVip.Designer.cs">
+      <DependentUpon>frmCVip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="当日营收\frmToday.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="当日营收\frmToday.Designer.cs">
+      <DependentUpon>frmToday.cs</DependentUpon>
+    </Compile>
+    <Compile Include="收银员交班\frmJB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="收银员交班\frmJB.Designer.cs">
+      <DependentUpon>frmJB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="收银配置\frmCashSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="收银配置\frmCashSet.Designer.cs">
+      <DependentUpon>frmCashSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="热键设定\frmHotKey.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="热键设定\frmHotKey.Designer.cs">
+      <DependentUpon>frmHotKey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="营收日报\frmReportDay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="营收日报\frmReportDay.Designer.cs">
+      <DependentUpon>frmReportDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="营收月报\frmReportMonth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="营收月报\frmReportMonth.Designer.cs">
+      <DependentUpon>frmReportMonth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="进货管理\frmInputBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="进货管理\frmInputBill.Designer.cs">
+      <DependentUpon>frmInputBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="进货管理\frmInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="进货管理\frmInput.Designer.cs">
+      <DependentUpon>frmInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="进货管理\frmInputDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="进货管理\frmInputDetail.Designer.cs">
+      <DependentUpon>frmInputDetail.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="会员管理\frmAddVip.resx">
+      <DependentUpon>frmAddVip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="会员管理\frmVip.resx">
+      <DependentUpon>frmVip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="会员管理\frmEditVip.resx">
+      <DependentUpon>frmEditVip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="供应商管理\frmAddSup.resx">
+      <DependentUpon>frmAddSup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="供应商管理\frmEditSup.resx">
+      <DependentUpon>frmEditSup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="供应商管理\frmSup.resx">
+      <DependentUpon>frmSup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="员工管理\frmAddUsers.resx">
+      <DependentUpon>frmAddUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="员工管理\frmUsers.resx">
+      <DependentUpon>frmUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="员工管理\frmEditUsers.resx">
+      <DependentUpon>frmEditUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="商品单位\frmAddUnit.resx">
+      <DependentUpon>frmAddUnit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="商品单位\frmUnit.resx">
+      <DependentUpon>frmUnit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="商品单位\frmEditUnit.resx">
+      <DependentUpon>frmEditUnit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="商品查询\frmGoodsSearch.resx">
+      <DependentUpon>frmGoodsSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="商品档案\frmAddGppds.resx">
+      <DependentUpon>frmAddGppds.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="商品档案\frmEditGppds.resx">
+      <DependentUpon>frmEditGppds.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="商品档案\frmGoods.resx">
+      <DependentUpon>frmGoods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="商品盘点\frmPD.resx">
+      <DependentUpon>frmPD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="商品类别\frmAddCategory.resx">
+      <DependentUpon>frmAddCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="商品类别\frmEditCategory.resx">
+      <DependentUpon>frmEditCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="商品类别\frmCategory.resx">
+      <DependentUpon>frmCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="商品零售报表\frmReport1.resx">
+      <DependentUpon>frmReport1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="商铺信息\frmShop.resx">
+      <DependentUpon>frmShop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="开始收银\frmCash.resx">
+      <DependentUpon>frmCash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="开始收银\frmCounts.resx">
+      <DependentUpon>frmCounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="开始收银\frmMoney.resx">
+      <DependentUpon>frmMoney.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="开始收银\frmCVip.resx">
+      <DependentUpon>frmCVip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="当日营收\frmToday.resx">
+      <DependentUpon>frmToday.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="收银员交班\frmJB.resx">
+      <DependentUpon>frmJB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="收银配置\frmCashSet.resx">
+      <DependentUpon>frmCashSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="热键设定\frmHotKey.resx">
+      <DependentUpon>frmHotKey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="营收日报\frmReportDay.resx">
+      <DependentUpon>frmReportDay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="营收月报\frmReportMonth.resx">
+      <DependentUpon>frmReportMonth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="进货管理\frmInputBill.resx">
+      <DependentUpon>frmInputBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="进货管理\frmInput.resx">
+      <DependentUpon>frmInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="进货管理\frmInputDetail.resx">
+      <DependentUpon>frmInputDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{EA662F76-CBE7-4A8D-B05B-324C785C7B89}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{E3D8759A-C5EB-402D-9F10-F5C6029A8D1A}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{7AAB17D2-8BFC-4736-9B67-22373D569E0E}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\37.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\38.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\39.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\41.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\42.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\43.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\44.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\45.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\46.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\47.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\49.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\p1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\p2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\remove.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\undo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\App Drawer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Blic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Bluetooth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Briefcase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Calculator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Camera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\CD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Clock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Contacts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Dropbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\eBuddy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Evernote.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Facebook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Gallery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\GMail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\IMDb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Instagram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Internet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Mail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Messages.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Messenger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Minimalistic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Movie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Phone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\PicsPlay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Skype.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\SoundHound.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Speaker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Videos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Weather.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Wi Fi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\YouTube.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\YouTube.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\App Drawer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bluetooth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Briefcase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calculator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Camera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contacts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dropbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eBuddy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Evernote.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Facebook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gallery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GMail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMDb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Instagram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Internet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Messages.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Messenger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minimalistic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Movie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Phone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PicsPlay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skype.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SoundHound.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Speaker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Videos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Weather.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wi Fi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="logo.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
