@@ -1,23 +1,19 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.13
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppCash", "AppCash\AppCash.csproj", "{D7DD3E5C-57ED-4495-BB5F-E0037DCEDB1B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{7064DD57-93A0-4299-B0BE-69CFF0B0A42A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{7AAB17D2-8BFC-4736-9B67-22373D569E0E}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{3628E825-EA7F-4794-9977-10BBCDA060E0}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{EA662F76-CBE7-4A8D-B05B-324C785C7B89}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{E3D8759A-C5EB-402D-9F10-F5C6029A8D1A}"
 EndProject
 Global
-	GlobalSection(SubversionScc) = preSolution
-		Svn-Managed = True
-		Manager = AnkhSVN - Subversion Support for Visual Studio
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|Mixed Platforms = Debug|Mixed Platforms
@@ -81,10 +77,8 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{7AAB17D2-8BFC-4736-9B67-22373D569E0E} = {3628E825-EA7F-4794-9977-10BBCDA060E0}
-		{7064DD57-93A0-4299-B0BE-69CFF0B0A42A} = {3628E825-EA7F-4794-9977-10BBCDA060E0}
-		{EA662F76-CBE7-4A8D-B05B-324C785C7B89} = {3628E825-EA7F-4794-9977-10BBCDA060E0}
-		{E3D8759A-C5EB-402D-9F10-F5C6029A8D1A} = {3628E825-EA7F-4794-9977-10BBCDA060E0}
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
 	EndGlobalSection
 EndGlobal

@@ -17,4 +17,3 @@ D:\Learning\CS-control-skin\C#Winfrom收银管理系统源码\收银系统\Model
 D:\Learning\CS-control-skin\C#Winfrom收银管理系统源码\收银系统\Model\bin\Debug\Model.pdb
 D:\Learning\CS-control-skin\C#Winfrom收银管理系统源码\收银系统\Model\obj\Debug\Model.dll
 D:\Learning\CS-control-skin\C#Winfrom收银管理系统源码\收银系统\Model\obj\Debug\Model.pdb
-D:\Learning\CS-control-skin\C#Winfrom收银管理系统源码\收银系统\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache

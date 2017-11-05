@@ -14,6 +14,10 @@ namespace AppCash
         public frmReportMonth()
         {
             InitializeComponent();
+            Dong.BLL.SaleInfo bll = new Dong.BLL.SaleInfo();
+            var dateyears = bll.GetAllDateYearList();
+        
+            cbYear.DataSource = dateyears;
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
@@ -25,7 +29,7 @@ namespace AppCash
             else
             {
                 MessageBoxEx.Show("年份不能为空!", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                  
+
             }
         }
 

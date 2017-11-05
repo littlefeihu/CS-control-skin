@@ -18,6 +18,7 @@ using System;
 using System.Data;
 using System.Collections.Generic;
 using Dong.Model;
+using System.Linq;
 namespace Dong.BLL
 {
     /// <summary>
@@ -181,7 +182,7 @@ namespace Dong.BLL
         {
             DataTable dt = new DataTable();
             dt = Maticsoft.DBUtility.DbHelperOleDb.Query("SELECT sum(Counts) as Counts1 ,sum(Price) as Price1,sum(SumGain1) as Gain,IdateT AS Idate1 FROM v_Gain where 1=1 and Idate>#" + dt1 + "# and Idate<=#" + dt2 + "# group by IdateT").Tables[0];
-            
+
             return dt;
         }
         public DataTable getMonthRePort(string strYear)
@@ -209,6 +210,21 @@ namespace Dong.BLL
             ds = Maticsoft.DBUtility.DbHelperOleDb.Query(strSql);
             return ds;
         }
+
+        public List<int> GetAllDateYearList()
+        {
+            List<int> dateYears = new List<int>();
+            DataSet ds = dal.GetAllDateYearList();
+            if (ds.Tables.Count > 0)
+            {
+                foreach (DataRow row in ds.Tables[0].Rows)
+                {
+                    dateYears.Add(DateTime.Parse(row["IDate"].ToString()).Year);
+                }
+            }
+            return dateYears.Distinct().ToList();
+        }
+
         #endregion  ExtensionMethod
     }
 }

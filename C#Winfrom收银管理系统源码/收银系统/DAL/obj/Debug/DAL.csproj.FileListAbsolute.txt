@@ -22,11 +22,11 @@ D:\项目\网上源代码\上传代码\16aspx\收银系统\收银系统\DAL\bin\
 D:\项目\网上源代码\上传代码\16aspx\收银系统\收银系统\DAL\obj\Debug\ResolveAssemblyReference.cache
 D:\项目\网上源代码\上传代码\16aspx\收银系统\收银系统\DAL\obj\Debug\DAL.dll
 D:\项目\网上源代码\上传代码\16aspx\收银系统\收银系统\DAL\obj\Debug\DAL.pdb
-D:\Learning\CS-control-skin\C#Winfrom收银管理系统源码\收银系统\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 D:\Learning\CS-control-skin\C#Winfrom收银管理系统源码\收银系统\DAL\bin\Debug\DAL.dll
 D:\Learning\CS-control-skin\C#Winfrom收银管理系统源码\收银系统\DAL\bin\Debug\DAL.pdb
 D:\Learning\CS-control-skin\C#Winfrom收银管理系统源码\收银系统\DAL\bin\Debug\Maticsoft.DBUtility.dll
 D:\Learning\CS-control-skin\C#Winfrom收银管理系统源码\收银系统\DAL\bin\Debug\Model.dll
 D:\Learning\CS-control-skin\C#Winfrom收银管理系统源码\收银系统\DAL\bin\Debug\Model.pdb
+D:\Learning\CS-control-skin\C#Winfrom收银管理系统源码\收银系统\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 D:\Learning\CS-control-skin\C#Winfrom收银管理系统源码\收银系统\DAL\obj\Debug\DAL.dll
 D:\Learning\CS-control-skin\C#Winfrom收银管理系统源码\收银系统\DAL\obj\Debug\DAL.pdb

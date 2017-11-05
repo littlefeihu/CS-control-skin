@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 // 特性集控制。更改这些特性值可修改
 // 与程序集关联的信息。
 [assembly: AssemblyTitle("AppCash")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("收银软件")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("享智科技有限公司")]
 [assembly: AssemblyProduct("AppCash")]
 [assembly: AssemblyCopyright("Copyright ©  2013")]
 [assembly: AssemblyTrademark("")]
@@ -28,7 +28,6 @@ using System.Runtime.InteropServices;
 //      次版本 
 //      内部版本号
 //      修订号
-//下载于51aspx.com
 // 可以指定所有这些值，也可以使用“内部版本号”和“修订号”的默认值，
 // 方法是按如下所示使用“*”:
 // [assembly: AssemblyVersion("1.0.*")]

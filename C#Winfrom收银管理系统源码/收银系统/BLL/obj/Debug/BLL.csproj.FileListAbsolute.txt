@@ -28,7 +28,6 @@ D:\项目\网上源代码\上传代码\16aspx\收银系统\收银系统\BLL\bin\
 D:\项目\网上源代码\上传代码\16aspx\收银系统\收银系统\BLL\obj\Debug\ResolveAssemblyReference.cache
 D:\项目\网上源代码\上传代码\16aspx\收银系统\收银系统\BLL\obj\Debug\BLL.dll
 D:\项目\网上源代码\上传代码\16aspx\收银系统\收银系统\BLL\obj\Debug\BLL.pdb
-D:\Learning\CS-control-skin\C#Winfrom收银管理系统源码\收银系统\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
 D:\Learning\CS-control-skin\C#Winfrom收银管理系统源码\收银系统\BLL\bin\Debug\BLL.dll
 D:\Learning\CS-control-skin\C#Winfrom收银管理系统源码\收银系统\BLL\bin\Debug\BLL.pdb
 D:\Learning\CS-control-skin\C#Winfrom收银管理系统源码\收银系统\BLL\bin\Debug\DAL.dll
@@ -36,5 +35,6 @@ D:\Learning\CS-control-skin\C#Winfrom收银管理系统源码\收银系统\BLL\b
 D:\Learning\CS-control-skin\C#Winfrom收银管理系统源码\收银系统\BLL\bin\Debug\Model.dll
 D:\Learning\CS-control-skin\C#Winfrom收银管理系统源码\收银系统\BLL\bin\Debug\DAL.pdb
 D:\Learning\CS-control-skin\C#Winfrom收银管理系统源码\收银系统\BLL\bin\Debug\Model.pdb
+D:\Learning\CS-control-skin\C#Winfrom收银管理系统源码\收银系统\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
 D:\Learning\CS-control-skin\C#Winfrom收银管理系统源码\收银系统\BLL\obj\Debug\BLL.dll
 D:\Learning\CS-control-skin\C#Winfrom收银管理系统源码\收银系统\BLL\obj\Debug\BLL.pdb
