@@ -118,6 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="p2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\p2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Movie" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Movie.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -133,8 +136,8 @@
   <data name="App_Drawer" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\App Drawer.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Facebook" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Facebook.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Play" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Play.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Blic" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Blic.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,6 +151,9 @@
   <data name="CD" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CD.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Facebook" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Facebook.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Camera" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Camera.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -156,6 +162,9 @@
   </data>
   <data name="Internet" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Internet.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="p1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\p1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Messages" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Messages.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,6 +178,9 @@
   <data name="Videos" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Videos.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Briefcase" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Briefcase.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Speaker" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Speaker.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -178,26 +190,26 @@
   <data name="Gallery" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Gallery.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Bluetooth" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Bluetooth.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Play" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Play.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Wi_Fi" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Wi Fi.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="YouTube" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\YouTube.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="QQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\QQ.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Messages1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Messages.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Contacts" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Contacts.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="PicsPlay" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PicsPlay.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eBuddy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eBuddy.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Weather" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Weather.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="IMDb" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\IMDb.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Messenger" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Messenger.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -205,29 +217,26 @@
   <data name="SoundHound" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SoundHound.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="PicsPlay" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PicsPlay.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Clock" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Clock.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Dropbox" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Dropbox.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Bluetooth" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bluetooth.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Evernote" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Evernote.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Briefcase" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Briefcase.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="IMDb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IMDb.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="eBuddy" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eBuddy.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Wi_Fi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Wi Fi.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="p1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\Images\p1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="p2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\Images\p2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Webchat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Webchat.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

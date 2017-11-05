@@ -11,7 +11,7 @@
     </ApplicationIcon>
     <AssemblyKeyContainerName>
     </AssemblyKeyContainerName>
-    <AssemblyName>Maticsoft.Common</AssemblyName>
+    <AssemblyName>AFX.Common</AssemblyName>
     <AssemblyOriginatorKeyFile>
     </AssemblyOriginatorKeyFile>
     <DefaultClientScript>JScript</DefaultClientScript>
@@ -19,7 +19,7 @@
     <DefaultTargetSchema>IE50</DefaultTargetSchema>
     <DelaySign>false</DelaySign>
     <OutputType>Library</OutputType>
-    <RootNamespace>Maticsoft.Common</RootNamespace>
+    <RootNamespace>AFX.Common</RootNamespace>
     <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
     <StartupObject>
     </StartupObject>
@@ -104,14 +104,19 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="COM.Excel">
-      <HintPath>..\AppCash\bin\Debug\COM.Excel.dll</HintPath>
+      <HintPath>..\Lib\COM.Excel.dll</HintPath>
     </Reference>
     <Reference Include="Excel">
-      <HintPath>..\AppCash\bin\Debug\Excel.dll</HintPath>
+      <HintPath>..\Lib\Excel.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
+    <Reference Include="office, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\Lib\office.dll</HintPath>
+    </Reference>
     <Reference Include="OpenSmtp">
-      <HintPath>..\AppCash\bin\Debug\OpenSmtp.dll</HintPath>
+      <HintPath>..\Lib\OpenSmtp.dll</HintPath>
     </Reference>
     <Reference Include="System">
       <Name>System</Name>

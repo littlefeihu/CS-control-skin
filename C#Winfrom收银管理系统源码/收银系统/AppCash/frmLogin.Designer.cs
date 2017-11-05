@@ -28,18 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
-            this.styleManager1 = new DevComponents.DotNetBar.StyleManager();
-            this.styleManager2 = new DevComponents.DotNetBar.StyleManager();
+            this.styleManager1 = new DevComponents.DotNetBar.StyleManager(this.components);
+            this.styleManager2 = new DevComponents.DotNetBar.StyleManager(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
             this.tbPwd = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.cbUserid = new DevComponents.DotNetBar.Controls.ComboBoxEx();
             this.btnLogin = new DevComponents.DotNetBar.ButtonX();
             this.btnExit = new DevComponents.DotNetBar.ButtonX();
             this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
+            this.txtusername = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.galleryContainer2 = new DevComponents.DotNetBar.GalleryContainer();
             this.labelItem1 = new DevComponents.DotNetBar.LabelItem();
             this.galleryContainer3 = new DevComponents.DotNetBar.GalleryContainer();
@@ -51,11 +52,13 @@
             // 
             // styleManager1
             // 
-            this.styleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.Office2007Blue;
+            this.styleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.Metro;
+            this.styleManager1.MetroColorParameters = new DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.White, System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(87)))), ((int)(((byte)(154))))));
             // 
             // styleManager2
             // 
-            this.styleManager2.ManagerStyle = DevComponents.DotNetBar.eStyle.Office2007Blue;
+            this.styleManager2.ManagerStyle = DevComponents.DotNetBar.eStyle.Metro;
+            this.styleManager2.MetroColorParameters = new DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.White, System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(87)))), ((int)(((byte)(154))))));
             // 
             // pictureBox1
             // 
@@ -82,7 +85,7 @@
             // 
             // 
             // 
-            this.labelX1.BackgroundStyle.Class = "";
+            this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX1.Location = new System.Drawing.Point(153, 99);
             this.labelX1.Name = "labelX1";
             this.labelX1.Size = new System.Drawing.Size(51, 23);
@@ -94,7 +97,7 @@
             // 
             // 
             // 
-            this.labelX2.BackgroundStyle.Class = "";
+            this.labelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX2.Location = new System.Drawing.Point(153, 135);
             this.labelX2.Name = "labelX2";
             this.labelX2.Size = new System.Drawing.Size(51, 23);
@@ -103,28 +106,19 @@
             // 
             // tbPwd
             // 
+            this.tbPwd.BackColor = System.Drawing.Color.White;
             // 
             // 
             // 
             this.tbPwd.Border.Class = "TextBoxBorder";
+            this.tbPwd.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.tbPwd.DisabledBackColor = System.Drawing.Color.White;
+            this.tbPwd.ForeColor = System.Drawing.Color.Black;
             this.tbPwd.Location = new System.Drawing.Point(210, 137);
             this.tbPwd.Name = "tbPwd";
             this.tbPwd.PasswordChar = '*';
             this.tbPwd.Size = new System.Drawing.Size(150, 21);
             this.tbPwd.TabIndex = 4;
-            this.tbPwd.Text = "1001";
-            // 
-            // cbUserid
-            // 
-            this.cbUserid.DisplayMember = "Text";
-            this.cbUserid.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbUserid.FormattingEnabled = true;
-            this.cbUserid.ItemHeight = 15;
-            this.cbUserid.Location = new System.Drawing.Point(210, 99);
-            this.cbUserid.Name = "cbUserid";
-            this.cbUserid.Size = new System.Drawing.Size(150, 21);
-            this.cbUserid.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.cbUserid.TabIndex = 5;
             // 
             // btnLogin
             // 
@@ -154,26 +148,42 @@
             // 
             this.panelEx1.CanvasColor = System.Drawing.SystemColors.Control;
             this.panelEx1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.panelEx1.Controls.Add(this.txtusername);
             this.panelEx1.Controls.Add(this.btnExit);
             this.panelEx1.Controls.Add(this.btnLogin);
-            this.panelEx1.Controls.Add(this.cbUserid);
             this.panelEx1.Controls.Add(this.tbPwd);
             this.panelEx1.Controls.Add(this.labelX2);
             this.panelEx1.Controls.Add(this.labelX1);
             this.panelEx1.Controls.Add(this.pictureBox2);
             this.panelEx1.Controls.Add(this.pictureBox1);
+            this.panelEx1.DisabledBackColor = System.Drawing.Color.Empty;
             this.panelEx1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelEx1.Location = new System.Drawing.Point(0, 0);
             this.panelEx1.Name = "panelEx1";
             this.panelEx1.Size = new System.Drawing.Size(399, 238);
             this.panelEx1.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx1.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
-            this.panelEx1.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
             this.panelEx1.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
             this.panelEx1.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
             this.panelEx1.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
             this.panelEx1.Style.GradientAngle = 90;
             this.panelEx1.TabIndex = 0;
+            // 
+            // txtusername
+            // 
+            this.txtusername.BackColor = System.Drawing.Color.White;
+            // 
+            // 
+            // 
+            this.txtusername.Border.Class = "TextBoxBorder";
+            this.txtusername.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtusername.DisabledBackColor = System.Drawing.Color.White;
+            this.txtusername.ForeColor = System.Drawing.Color.Black;
+            this.txtusername.Location = new System.Drawing.Point(210, 99);
+            this.txtusername.Name = "txtusername";
+            this.txtusername.PreventEnterBeep = true;
+            this.txtusername.Size = new System.Drawing.Size(150, 21);
+            this.txtusername.TabIndex = 8;
             // 
             // galleryContainer2
             // 
@@ -181,12 +191,17 @@
             // 
             // 
             this.galleryContainer2.BackgroundStyle.Class = "RibbonFileMenuColumnTwoContainer";
+            this.galleryContainer2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.galleryContainer2.EnableGalleryPopup = false;
             this.galleryContainer2.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.galleryContainer2.MinimumSize = new System.Drawing.Size(180, 240);
             this.galleryContainer2.MultiLine = false;
             this.galleryContainer2.Name = "galleryContainer2";
             this.galleryContainer2.PopupUsesStandardScrollbars = false;
+            // 
+            // 
+            // 
+            this.galleryContainer2.TitleStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             // 
             // labelItem1
             // 
@@ -201,12 +216,17 @@
             // 
             // 
             this.galleryContainer3.BackgroundStyle.Class = "RibbonFileMenuColumnTwoContainer";
+            this.galleryContainer3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.galleryContainer3.EnableGalleryPopup = false;
             this.galleryContainer3.LayoutOrientation = DevComponents.DotNetBar.eOrientation.Vertical;
             this.galleryContainer3.MinimumSize = new System.Drawing.Size(180, 240);
             this.galleryContainer3.MultiLine = false;
             this.galleryContainer3.Name = "galleryContainer3";
             this.galleryContainer3.PopupUsesStandardScrollbars = false;
+            // 
+            // 
+            // 
+            this.galleryContainer3.TitleStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             // 
             // labelItem2
             // 
@@ -221,13 +241,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(399, 238);
             this.Controls.Add(this.panelEx1);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "  旺财收银管理系统";
+            this.Text = "享智收银管理系统";
             this.Load += new System.EventHandler(this.frmLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -245,7 +266,6 @@
         private DevComponents.DotNetBar.LabelX labelX1;
         private DevComponents.DotNetBar.LabelX labelX2;
         private DevComponents.DotNetBar.Controls.TextBoxX tbPwd;
-        private DevComponents.DotNetBar.Controls.ComboBoxEx cbUserid;
         private DevComponents.DotNetBar.ButtonX btnLogin;
         private DevComponents.DotNetBar.ButtonX btnExit;
         private DevComponents.DotNetBar.PanelEx panelEx1;
@@ -253,6 +273,6 @@
         private DevComponents.DotNetBar.LabelItem labelItem1;
         private DevComponents.DotNetBar.GalleryContainer galleryContainer3;
         private DevComponents.DotNetBar.LabelItem labelItem2;
-
+        private DevComponents.DotNetBar.Controls.TextBoxX txtusername;
     }
 }

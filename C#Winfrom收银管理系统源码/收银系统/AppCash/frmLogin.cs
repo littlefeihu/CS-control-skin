@@ -9,25 +9,26 @@ using System.Windows.Forms;
 using DevComponents.DotNetBar;
 namespace AppCash
 {
-    public partial class frmLogin : Form
+    public partial class frmLogin : Office2007Form
     {
         public frmLogin()
         {
             InitializeComponent();
+            txtusername.Focus();
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
             //登录
-            if (tbPwd.Text == "" || cbUserid.Text == "")
+            if (tbPwd.Text == "" || txtusername.Text == "")
             {
                 MessageBoxEx.Show("请输入登录口令!", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             Dong.BLL.OperInfo bOper = new Dong.BLL.OperInfo();
-            if (bOper.CheckUser(cbUserid.Text, tbPwd.Text))
+            if (bOper.CheckUser(txtusername.Text, tbPwd.Text))
             {
-                Dong.Model.GlobalsInfo.UserName = cbUserid.Text;
+                Dong.Model.GlobalsInfo.UserName = txtusername.Text;
                 frmMain frm = new frmMain();
 
                 frm.Show();
@@ -41,16 +42,7 @@ namespace AppCash
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
-
             //初始化界面信息
-            //提取用户列表
-            DataSet ds = new DataSet();
-            Dong.BLL.OperInfo mOper = new Dong.BLL.OperInfo();
-            ds = mOper.GetAllList();
-            cbUserid.ValueMember = "Code";
-            cbUserid.DisplayMember = "Code";
-            cbUserid.DataSource = ds.Tables[0];
-
             //提取配置信息
             Dong.BLL.ShopInfo bShop = new Dong.BLL.ShopInfo();
             Dong.Model.ShopInfo mShop = new Dong.Model.ShopInfo();

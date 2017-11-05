@@ -9,11 +9,12 @@ using DevComponents.DotNetBar;
 
 namespace AppCash
 {
-    public partial class frmMain : Form
+    public partial class frmMain : Office2007Form
     {
         public frmMain()
         {
             InitializeComponent();
+            this.EnableGlass = false;
         }
 
         private void frmMain_FormClosing(object sender, FormClosingEventArgs e)
@@ -237,12 +238,17 @@ namespace AppCash
                 {
                     tabMain.Tabs.RemoveAt(1);
                 }
-                
-            } while (tabMain.Tabs.Count!=1);
+
+            } while (tabMain.Tabs.Count != 1);
 
             tabMain.Refresh();
         }
-        
+        private void buttonItem2_Click(object sender, EventArgs e)
+        {
+            ContactForm contactForm = new ContactForm();
+            contactForm.Show();
+
+        }
     }
-    
+
 }

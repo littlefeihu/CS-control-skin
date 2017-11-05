@@ -32,7 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Maticsoft.DBUtility">
-      <HintPath>..\AppCash\bin\Debug\Maticsoft.DBUtility.dll</HintPath>
+      <HintPath>..\Lib\Maticsoft.DBUtility.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />

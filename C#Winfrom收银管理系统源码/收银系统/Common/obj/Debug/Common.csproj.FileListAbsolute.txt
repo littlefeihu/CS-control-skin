@@ -86,3 +86,14 @@ D:\项目\网上源代码\上传代码\16aspx\收银系统\收银系统\Common\b
 D:\项目\网上源代码\上传代码\16aspx\收银系统\收银系统\Common\obj\Debug\ResolveAssemblyReference.cache
 D:\项目\网上源代码\上传代码\16aspx\收银系统\收银系统\Common\obj\Debug\Maticsoft.Common.dll
 D:\项目\网上源代码\上传代码\16aspx\收银系统\收银系统\Common\obj\Debug\Maticsoft.Common.pdb
+D:\Learning\CS-control-skin\C#Winfrom收银管理系统源码\收银系统\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+D:\Learning\CS-control-skin\C#Winfrom收银管理系统源码\收银系统\Common\bin\Debug\AFX.Common.dll
+D:\Learning\CS-control-skin\C#Winfrom收银管理系统源码\收银系统\Common\bin\Debug\AFX.Common.pdb
+D:\Learning\CS-control-skin\C#Winfrom收银管理系统源码\收银系统\Common\bin\Debug\COM.Excel.dll
+D:\Learning\CS-control-skin\C#Winfrom收银管理系统源码\收银系统\Common\bin\Debug\Excel.dll
+D:\Learning\CS-control-skin\C#Winfrom收银管理系统源码\收银系统\Common\bin\Debug\office.dll
+D:\Learning\CS-control-skin\C#Winfrom收银管理系统源码\收银系统\Common\bin\Debug\OpenSmtp.dll
+D:\Learning\CS-control-skin\C#Winfrom收银管理系统源码\收银系统\Common\bin\Debug\Microsoft.Vbe.Interop.dll
+D:\Learning\CS-control-skin\C#Winfrom收银管理系统源码\收银系统\Common\bin\Debug\stdole.dll
+D:\Learning\CS-control-skin\C#Winfrom收银管理系统源码\收银系统\Common\obj\Debug\AFX.Common.dll
+D:\Learning\CS-control-skin\C#Winfrom收银管理系统源码\收银系统\Common\obj\Debug\AFX.Common.pdb
