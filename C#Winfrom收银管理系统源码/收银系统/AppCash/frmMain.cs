@@ -15,8 +15,64 @@ namespace AppCash
         {
             InitializeComponent();
             this.EnableGlass = false;
+            ribbonControl1.Items[0].ShowSubItems = true;
+            InitModules();
         }
+        private void InitModules()
+        {
+            List<ButtonItem> btnItems = new List<ButtonItem>();
 
+            foreach (var tabItem in ribbonControl1.Items)
+            {
+                RibbonTabItem ribbonTabItem = tabItem as RibbonTabItem;
+                if (ribbonTabItem == null)
+                    continue;
+                foreach (RibbonBar ribbonBar in ribbonTabItem.Panel.Controls)
+                {
+                    foreach (var item in ribbonBar.Items)
+                    {
+                        ButtonItem btnItem = item as ButtonItem;
+                        if (btnItem != null)
+                        {
+                            btnItems.Add(btnItem);
+                        }
+                        else
+                        {
+                            ItemContainer itemContainer = item as ItemContainer;
+
+                            foreach (var subitem in itemContainer.SubItems)
+                            {
+                                ButtonItem btnItem1 = subitem as ButtonItem;
+                                btnItems.Add(btnItem1);
+                            }
+                        }
+                    }
+                }
+            }
+
+            foreach (var btnitem in btnItems)
+            {
+                if (Dong.Model.GlobalsInfo.userflag == 0)
+                {
+                    //管理员
+
+                }
+                else
+                {
+                    //收银员
+
+                    if (btnitem.Text == "开始收银"|| btnitem.Text =="微信" || btnitem.Text =="QQ" )
+                    {
+                        btnitem.Enabled = true;
+                    }
+                    else
+                    {
+                        btnitem.Enabled = false;
+                    }
+                }
+            }
+
+        }
         private void frmMain_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
@@ -248,6 +304,26 @@ namespace AppCash
             ContactForm contactForm = new ContactForm();
             contactForm.Show();
 
+        }
+
+        private void 退出程序ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("确定退出收银系统吗?", "退出确认", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void 注销ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmLogin login = new frmLogin();
+            login.Show();
+            this.Visible = false;
+        }
+
+        private void switchButtonItem1_ValueChanged(object sender, EventArgs e)
+        {
+            ribbonControl1.Expanded = !ribbonControl1.Expanded;
         }
     }
 

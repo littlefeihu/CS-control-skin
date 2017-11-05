@@ -40,11 +40,11 @@
             // 
             // 
             this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX1.Location = new System.Drawing.Point(123, 12);
+            this.labelX1.Location = new System.Drawing.Point(27, 44);
             this.labelX1.Name = "labelX1";
-            this.labelX1.Size = new System.Drawing.Size(113, 23);
+            this.labelX1.Size = new System.Drawing.Size(375, 23);
             this.labelX1.TabIndex = 0;
-            this.labelX1.Text = "微信:littlefeihu";
+            this.labelX1.Text = "技术支持微信:littlefeihu，或通过下面的二维码直接扫描添加";
             // 
             // labelX2
             // 
@@ -54,16 +54,16 @@
             this.labelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX2.Location = new System.Drawing.Point(27, 12);
             this.labelX2.Name = "labelX2";
-            this.labelX2.Size = new System.Drawing.Size(90, 23);
+            this.labelX2.Size = new System.Drawing.Size(156, 23);
             this.labelX2.TabIndex = 0;
-            this.labelX2.Text = "QQ:378917466";
+            this.labelX2.Text = "技术支持QQ:378917466";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::AppCash.Properties.Resources.Webchat;
-            this.pictureBox1.Location = new System.Drawing.Point(27, 41);
+            this.pictureBox1.Location = new System.Drawing.Point(25, 66);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(407, 421);
+            this.pictureBox1.Size = new System.Drawing.Size(375, 409);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -80,7 +80,7 @@
             this.MinimumSize = new System.Drawing.Size(487, 521);
             this.Name = "ContactForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "联系方式";
+            this.Text = "技术支持";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

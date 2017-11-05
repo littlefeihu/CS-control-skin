@@ -24,5 +24,7 @@ namespace Dong.Model
         public static string vipCode="";
         public static double vipZK=1;
 
-	}
+        public static OperInfo OperInfo;
+
+    }
 }

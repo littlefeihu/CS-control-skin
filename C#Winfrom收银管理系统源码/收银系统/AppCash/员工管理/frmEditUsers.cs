@@ -67,7 +67,7 @@ namespace AppCash
             {
                 mOper.CId = "无";
             }
-            mOper.Role = 0;
+            mOper.Role = cbRoles.SelectedIndex;
             Dong.BLL.OperInfo bOper = new Dong.BLL.OperInfo();
             if (bOper.Update(mOper))
             {

@@ -5,8 +5,8 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-
 using DevComponents.DotNetBar;
+
 namespace AppCash
 {
     public partial class frmLogin : Office2007Form
@@ -14,7 +14,7 @@ namespace AppCash
         public frmLogin()
         {
             InitializeComponent();
-            txtusername.Focus();
+            this.EnableGlass = false;
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -22,13 +22,14 @@ namespace AppCash
             //登录
             if (tbPwd.Text == "" || txtusername.Text == "")
             {
-                MessageBoxEx.Show("请输入登录口令!", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBoxEx.Show("请输入账号密码!", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             Dong.BLL.OperInfo bOper = new Dong.BLL.OperInfo();
             if (bOper.CheckUser(txtusername.Text, tbPwd.Text))
             {
                 Dong.Model.GlobalsInfo.UserName = txtusername.Text;
+
                 frmMain frm = new frmMain();
 
                 frm.Show();
@@ -36,7 +37,7 @@ namespace AppCash
             }
             else
             {
-                MessageBoxEx.Show("您输入的口令不正确!", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBoxEx.Show("您输入的账号密码不正确!", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

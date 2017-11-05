@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.styleManager1 = new DevComponents.DotNetBar.StyleManager(this.components);
-            this.styleManager2 = new DevComponents.DotNetBar.StyleManager(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
@@ -52,13 +51,8 @@
             // 
             // styleManager1
             // 
-            this.styleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.Metro;
+            this.styleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.Office2007Blue;
             this.styleManager1.MetroColorParameters = new DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.White, System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(87)))), ((int)(((byte)(154))))));
-            // 
-            // styleManager2
-            // 
-            this.styleManager2.ManagerStyle = DevComponents.DotNetBar.eStyle.Metro;
-            this.styleManager2.MetroColorParameters = new DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.White, System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(87)))), ((int)(((byte)(154))))));
             // 
             // pictureBox1
             // 
@@ -106,14 +100,12 @@
             // 
             // tbPwd
             // 
-            this.tbPwd.BackColor = System.Drawing.Color.White;
             // 
             // 
             // 
             this.tbPwd.Border.Class = "TextBoxBorder";
             this.tbPwd.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.tbPwd.DisabledBackColor = System.Drawing.Color.White;
-            this.tbPwd.ForeColor = System.Drawing.Color.Black;
             this.tbPwd.Location = new System.Drawing.Point(210, 137);
             this.tbPwd.Name = "tbPwd";
             this.tbPwd.PasswordChar = '*';
@@ -171,14 +163,12 @@
             // 
             // txtusername
             // 
-            this.txtusername.BackColor = System.Drawing.Color.White;
             // 
             // 
             // 
             this.txtusername.Border.Class = "TextBoxBorder";
             this.txtusername.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtusername.DisabledBackColor = System.Drawing.Color.White;
-            this.txtusername.ForeColor = System.Drawing.Color.Black;
             this.txtusername.Location = new System.Drawing.Point(210, 99);
             this.txtusername.Name = "txtusername";
             this.txtusername.PreventEnterBeep = true;
@@ -260,7 +250,6 @@
         #endregion
 
         private DevComponents.DotNetBar.StyleManager styleManager1;
-        private DevComponents.DotNetBar.StyleManager styleManager2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private DevComponents.DotNetBar.LabelX labelX1;

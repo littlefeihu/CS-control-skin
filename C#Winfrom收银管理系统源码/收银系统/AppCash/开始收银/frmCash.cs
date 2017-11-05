@@ -145,6 +145,10 @@ namespace AppCash
             Dong.BLL.SaleInfo bSaleInfo = new Dong.BLL.SaleInfo();
             Dong.Model.SaleInfo mSaleInfo = new Dong.Model.SaleInfo();
             mSaleInfo = bSaleInfo.GetPreModel(Dong.Model.GlobalsInfo.UserName);
+            if (mSaleInfo == null)
+            {
+                mSaleInfo = new Dong.Model.SaleInfo();
+            }
             lblPreBillNo.Text = mSaleInfo.Pid;
             lblPreBillCash.Text = string.Format("{0:F2}", mSaleInfo.Price.ToString());
             lblPreTime.Text = mSaleInfo.IDate.ToString();
