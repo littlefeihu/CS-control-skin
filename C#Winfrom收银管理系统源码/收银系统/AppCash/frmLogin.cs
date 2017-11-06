@@ -6,17 +6,48 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using DevComponents.DotNetBar;
+using System.Xml.Linq;
+using System.IO;
 
 namespace AppCash
 {
     public partial class frmLogin : Office2007Form
     {
+        const string userprofilefile = "userprofile.xml";
         public frmLogin()
         {
             InitializeComponent();
             this.EnableGlass = false;
+            ReadUserProfile();
         }
+        private void SaveUserProfile(string username, string password)
+        {
+            if (!chkRememberPassword.Checked)
+            {
+                username = string.Empty;
+                password = string.Empty;
+            }
+            XDocument xdoc = new XDocument(
+                                        new XDeclaration("1.0", "utf-8", "yes"),
+                                        new XElement("root",
+                                        new XElement("username", username),
+                                        new XElement("password", password)
+                                        ));
+            xdoc.Save(userprofilefile);
 
+        }
+        private void ReadUserProfile()
+        {
+            if (File.Exists(userprofilefile))
+            {
+                XElement xele = XElement.Load(userprofilefile);
+                XElement usernameEle = xele.Element("username");
+                XElement pwdEle = xele.Element("password");
+                txtusername.Text = usernameEle.Value;
+                tbPwd.Text = pwdEle.Value;
+            }
+
+        }
         private void btnLogin_Click(object sender, EventArgs e)
         {
             //登录
@@ -25,9 +56,15 @@ namespace AppCash
                 MessageBoxEx.Show("请输入账号密码!", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+            string username = txtusername.Text;
+            string password = tbPwd.Text;
+
+
             Dong.BLL.OperInfo bOper = new Dong.BLL.OperInfo();
-            if (bOper.CheckUser(txtusername.Text, tbPwd.Text))
+            if (bOper.CheckUser(username, password))
             {
+                SaveUserProfile(username, password);
+
                 Dong.Model.GlobalsInfo.UserName = txtusername.Text;
 
                 frmMain frm = new frmMain();

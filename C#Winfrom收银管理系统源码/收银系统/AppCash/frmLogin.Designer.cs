@@ -44,6 +44,7 @@
             this.labelItem1 = new DevComponents.DotNetBar.LabelItem();
             this.galleryContainer3 = new DevComponents.DotNetBar.GalleryContainer();
             this.labelItem2 = new DevComponents.DotNetBar.LabelItem();
+            this.chkRememberPassword = new DevComponents.DotNetBar.Controls.CheckBoxX();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panelEx1.SuspendLayout();
@@ -110,36 +111,37 @@
             this.tbPwd.Name = "tbPwd";
             this.tbPwd.PasswordChar = '*';
             this.tbPwd.Size = new System.Drawing.Size(150, 21);
-            this.tbPwd.TabIndex = 4;
+            this.tbPwd.TabIndex = 2;
             // 
             // btnLogin
             // 
             this.btnLogin.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnLogin.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnLogin.Location = new System.Drawing.Point(153, 178);
+            this.btnLogin.Location = new System.Drawing.Point(153, 191);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(92, 23);
             this.btnLogin.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnLogin.TabIndex = 6;
-            this.btnLogin.Text = "登录(Enter)";
+            this.btnLogin.Text = "登录";
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // btnExit
             // 
             this.btnExit.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnExit.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnExit.Location = new System.Drawing.Point(268, 178);
+            this.btnExit.Location = new System.Drawing.Point(268, 191);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(92, 23);
             this.btnExit.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnExit.TabIndex = 7;
-            this.btnExit.Text = "取消(Esc)";
+            this.btnExit.Text = "取消";
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // panelEx1
             // 
             this.panelEx1.CanvasColor = System.Drawing.SystemColors.Control;
             this.panelEx1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.panelEx1.Controls.Add(this.chkRememberPassword);
             this.panelEx1.Controls.Add(this.txtusername);
             this.panelEx1.Controls.Add(this.btnExit);
             this.panelEx1.Controls.Add(this.btnLogin);
@@ -173,7 +175,7 @@
             this.txtusername.Name = "txtusername";
             this.txtusername.PreventEnterBeep = true;
             this.txtusername.Size = new System.Drawing.Size(150, 21);
-            this.txtusername.TabIndex = 8;
+            this.txtusername.TabIndex = 1;
             // 
             // galleryContainer2
             // 
@@ -225,6 +227,22 @@
             this.labelItem2.CanCustomize = false;
             this.labelItem2.Name = "labelItem2";
             // 
+            // chkRememberPassword
+            // 
+            // 
+            // 
+            // 
+            this.chkRememberPassword.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.chkRememberPassword.Checked = true;
+            this.chkRememberPassword.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkRememberPassword.CheckValue = "Y";
+            this.chkRememberPassword.Location = new System.Drawing.Point(210, 162);
+            this.chkRememberPassword.Name = "chkRememberPassword";
+            this.chkRememberPassword.Size = new System.Drawing.Size(100, 23);
+            this.chkRememberPassword.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.chkRememberPassword.TabIndex = 3;
+            this.chkRememberPassword.Text = "记住账号";
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -263,5 +281,6 @@
         private DevComponents.DotNetBar.GalleryContainer galleryContainer3;
         private DevComponents.DotNetBar.LabelItem labelItem2;
         private DevComponents.DotNetBar.Controls.TextBoxX txtusername;
+        private DevComponents.DotNetBar.Controls.CheckBoxX chkRememberPassword;
     }
 }

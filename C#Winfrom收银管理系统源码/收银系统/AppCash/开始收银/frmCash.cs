@@ -44,6 +44,7 @@ namespace AppCash
             lblUser.Text = Dong.Model.GlobalsInfo.UserName;
             lblTime.Text = DateTime.Now.ToString();
             tbCode.Focus();
+
         }
 
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
@@ -58,6 +59,8 @@ namespace AppCash
                     return true;
                 case Keys.P:
                     Cash();
+
+                    Dong.Model.GlobalsInfo.Reset();
                     return true;
                 case Keys.Enter:
 

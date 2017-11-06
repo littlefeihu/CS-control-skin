@@ -26,5 +26,11 @@ namespace Dong.Model
 
         public static OperInfo OperInfo;
 
+
+        public static void Reset()
+        {
+            vipZK = 1;
+        }
+
     }
 }
